@@ -1,0 +1,95 @@
+/*=============== 3.0 Carousel ===================*/
+// Styling for the masthead
+
+.masthead { 
+  text-align: center;
+  color: white;
+  .intro-text {
+    padding-top: 150px;
+    padding-bottom: 100px;
+    color: ghostwhite;
+    .intro-lead-in {
+      font-size: 22px;
+      font-style: italic;
+      line-height: 22px;
+      margin-bottom: 25px;
+      -webkit-animation-duration: 2s; 
+      -webkit-animation-delay: 0.5s;
+      text-shadow: 0.5px 1px 2px $black;
+      @include body-font;
+      
+    }
+    .intro-heading {
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 50px;
+      margin-bottom: 25px;
+      -webkit-animation-duration: 2s; 
+      -webkit-animation-delay: 0.5s;
+      text-shadow: 0.5px 1px 2px $black;
+      @include body-font;
+    }
+  }
+  .carousel-indicators .active {
+    background-color: $primary !important;
+  }
+}
+
+@media(min-width:768px) {
+  .masthead {
+    .intro-text {
+      padding-top: 300px;
+      padding-bottom: 200px;
+      .intro-lead-in {
+        font-size: 24px;
+        font-style: italic;
+        line-height: 40px;
+        margin-bottom: 25px;
+        @include body-font;
+      }
+      .intro-heading {
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 75px;
+        margin-bottom: 20px;
+        @include body-font;
+      }
+    }
+  }
+}
+
+
+.carousel-item {
+  &:nth-child(1) {
+    background-image: url('../img/header-bg-1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    height: 100vh;
+    @include background-cover;
+  }
+  &:nth-child(2) {
+    background-image: url('../img/header-bg-2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    height: 100vh;
+    @include background-cover;
+  }
+  &:nth-child(3) {
+    background-image: url('../img/header-bg-3.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    height: 100vh;
+    @include background-cover;
+  }
+  &:nth-child(4) {
+    background-image: url('../img/header-bg-4.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    height: 100vh;
+    @include background-cover;
+  }
+}

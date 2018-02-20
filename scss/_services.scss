@@ -1,0 +1,19 @@
+/*=============== 7.0 Service ===================*/
+// Styling for the services section
+section#services {
+  background-color: $white !important;
+  h3.section-subheading {
+    margin-bottom: 15px;
+  }
+  .fa {
+    display: unset;
+  }
+  .section-description {
+    padding: 0% 10% 0% 10%;
+  }
+  span.text-muted {
+    text-align: left !important;
+    font-size: 14px;
+  }
+}
+

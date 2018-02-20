@@ -1,0 +1,28 @@
+/*===================== TABLE OF CONTENT =======================
+0. Base
+1. Global
+2. Navbar
+3. Carousel
+4. About
+5. Product
+7. Service
+8. Portfolio
+9. Contact
+10. Footer
+=============================================================*/
+// Core variables and mixins
+@import "variables.scss";
+@import "mixins.scss";
+
+// Global CSS
+@import "global.scss";
+// Components
+
+@import "navbar.scss";
+@import "carousel.scss";
+@import "about.scss";
+@import "product.scss";
+@import "services.scss";
+@import "portfolio.scss";
+@import "contact.scss";
+@import "footer.scss";

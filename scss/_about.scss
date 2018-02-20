@@ -1,0 +1,62 @@
+/*=============== 4.0 Sidebar ===================*/
+
+// Styling for the timeline section
+section#about {
+  h2.title__title {
+    margin-bottom: 20px;
+  }
+  p {
+    text-indent: 50px;
+    color: $gray-600;
+    font-size: 14px;
+  }
+  .slide-image {
+    position: relative;
+    margin-bottom: 50px;
+  }
+  
+  .slide-image .slide-item {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .slide-image .slide-image__front {
+    width: 70%;
+    margin-left: 0;
+    position: static;
+  }
+  
+  .slide-image .slide-image__front .slide-item:after {
+    content: '';
+    display: block;
+    padding-top: 130%;
+  }
+  
+  .slide-image .slide-image__black {
+    width: 50%;
+    margin-left: 0;
+    position: absolute;
+    top: 45%;
+    right: 0;
+    z-index: 99;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    -webkit-transform: translateY(-45%);
+            transform: translateY(-45%);
+  }
+  
+  .slide-image .slide-image__black .slide-item:after {
+    content: '';
+    display: block;
+    padding-top: 128%;
+  }
+  
+  .slide-image .swiper-pagination-custom {
+    position: absolute;
+    right: 0;
+    bottom: -45px;
+    margin-top: 0;
+  }
+  
+}
